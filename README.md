@@ -18,11 +18,13 @@ A minimal and clean **Conky widget** for the **Bitaxe Gamma miner**. It displays
 ![Screenshot](https://github.com/user-attachments/assets/3275edbb-3686-4a11-8fbd-89f9e5378188)
 
 ## Installation
-1. **Install Conky** (if not already installed):
+1. Install Conky and jq (if not already installed):
 
    ```bash
    sudo apt update
    sudo apt install conky-all
+   sudo apt install jq
+
    
 1. **Change the API IP address or endpoint with your IP** in `bitaxe.sh`:
 
@@ -30,7 +32,7 @@ A minimal and clean **Conky widget** for the **Bitaxe Gamma miner**. It displays
    API_URL="http://192.168.X.X/api/system/info"
   2. Copy bitaxe.conf and bitaxe.sh to your Conky configuration folder:
       ```bash
-     ~/.config/conky/
+     git clone https://github.com/HamdiUT/bitaxe-conky-widget ~/.config/conky/
 
 
 5. Make the script executable:
@@ -57,15 +59,16 @@ A minimal and clean **Conky widget** for the **Bitaxe Gamma miner**. It displays
    
 7. Add the following content, replacing `USERNAME` with your Linux username:
 
+     ```bash
 
-`[Desktop Entry]
-Type=Application
-Exec=conky -c /home/USERNAME/.config/conky/bitaxe.conf
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name=Bitaxe Conky Widget
-Comment=Start Bitaxe Conky widget at login`
+   [Desktop Entry]
+   Type=Application
+   Exec=conky -c /home/USERNAME/.config/conky/bitaxe.conf
+   Hidden=false
+   NoDisplay=false
+   X-GNOME-Autostart-enabled=true
+   Name=Bitaxe Conky Widget
+   Comment=Start Bitaxe Conky widget at login
 
 4. Save and close the file (Ctrl+O, Enter, Ctrl+X). **Conky will now start automatically at login.**
 
