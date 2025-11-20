@@ -1,5 +1,5 @@
 #!/bin/bash
-API_URL="http://192.168.1.10/api/system/info"
+API_URL="http://192.168.X.X/api/system/info"
 
 data=$(curl -s "$API_URL")
 
@@ -29,7 +29,7 @@ center() {
 
 # Affichage
 center "===== Bitaxe Gamma ====="        # séparateur du haut
-printf "Hash Rate           : %.2f H/s\n" "$hash"
+printf "Hash Rate           : %.2f Gh/s\n" "$hash"
 printf "Power               : %.2f W\n" "$power"
 printf "Temperature         : %s °C\n" "$temp"
 printf "Best Diff           : %s\n" "$bestdiff"
