@@ -18,28 +18,44 @@ A minimal and clean **Conky widget** for the **Bitaxe Gamma miner**. It displays
 ![Screenshot](https://github.com/user-attachments/assets/3275edbb-3686-4a11-8fbd-89f9e5378188)
 
 ## Installation
+1. **Install Conky** (if not already installed):
 
-1. **Change the API IP address or endpoint** in `bitaxe.sh`:
+   ```bash
+   sudo apt update
+   sudo apt install conky-all
+   
+1. **Change the API IP address or endpoint with your IP** in `bitaxe.sh`:
 
    ```bash
    API_URL="http://192.168.X.X/api/system/info"
-  2. Copy the files to your Conky configuration folder: ~/.config/conky/
+  2. Copy bitaxe.conf and bitaxe.sh to your Conky configuration folder:
+      ```bash
+     ~/.config/conky/
 
 
-3. Make the script executable: chmod +x ~/.config/conky/bitaxe.sh
+5. Make the script executable:
+  
+   ```bash
+   chmod +x ~/.config/conky/bitaxe.sh
 
 
-4. Launch Conky manually with the configuration: conky -c ~/.config/conky/bitaxe.conf
+7. Launch Conky manually with the configuration:
+   ```bash
+    conky -c ~/.config/conky/bitaxe.conf
 
 
 ## Start Conky Automatically at Login (via Desktop Entry)
 
-1. Create the autostart folder if it does not exist: mkdir -p ~/.config/autostart
+1. Create the autostart folder if it does not exist:
+    ```bash
+   mkdir -p ~/.config/autostart
 
-2. Create a `.desktop` file for Conky: nano ~/.config/autostart/bitaxe-conky.desktop
+4. Create a `.desktop` file for Conky:
+    ```bash
+   nano ~/.config/autostart/bitaxe-conky.desktop
 
    
-3. Add the following content, replacing `USERNAME` with your Linux username:
+7. Add the following content, replacing `USERNAME` with your Linux username:
 
 
 `[Desktop Entry]
