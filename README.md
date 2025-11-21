@@ -32,7 +32,7 @@ A minimal and clean **Conky widget** for the **Bitaxe Gamma or NerdQaxe miner** 
    API_URL="http://192.168.X.X/api/system/info"
   2. Copy bitaxe.conf and bitaxe.sh to your Conky configuration folder:
       ```bash
-     git clone https://github.com/HamdiUT/bitaxe-conky-widget ~/.config/conky/
+     git clone https://github.com/HamdiUT/AxeOS-conky-widget-linux ~/.config/conky/
 
 
 5. Make the script executable:
