@@ -1,6 +1,6 @@
 # Bitaxe Conky Widget
 
-A minimal and clean **Conky widget** for the **Bitaxe Gamma or NerdQaxe miner** (compatible with all miners using AxeOS). It displays key mining statistics in a readable table format on your Linux desktop.
+A minimal and clean **Conky widget** for the **Bitaxe Gamma or NerdQaxe miner** (compatible with all miners using AxeOS version 2.10.1 and earlier ). It displays key mining statistics in a readable table format on your Linux desktop.
 
 ## Features
 
